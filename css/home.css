@@ -108,11 +108,11 @@ span {
 
 .btn {
     display: inline-block;
-    padding: 1rem 2.8rem;
+    padding: 1rem 2rem;
     background: var(--main-color);
     border-radius: 4rem;
     box-shadow: 0 0 1rem var(--main-color);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: var(--second-bg-color);
     letter-spacing: .1rem;
     font-weight: 600;
@@ -151,4 +151,55 @@ span {
 .about-content p {
     font-size: 1.5rem;
     margin: 2rem 0 3rem;
+}
+
+.experience h2:first-child {
+    margin-bottom: 2rem;
+}
+
+.experience-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.experience-container .experience-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 30rem;
+    background: var(--second-bg-color);
+    padding: 15px 20px;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .3s ease;
+    min-height: 280px;
+}
+
+.experience-container .experience-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.experience-box i {
+    font-size: 2.5rem;
+    color: var(--main-color);
+}
+
+.experience-box h2 {
+    font-size: 1.8rem;
+    padding-bottom: .5rem;
+}
+
+.experience-box h3 {
+    font-size: 1.4rem;
+    color: var(--main-color);
+}
+
+.experience-box p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
 }
