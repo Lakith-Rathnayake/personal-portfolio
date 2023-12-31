@@ -203,3 +203,51 @@ span {
     font-size: 1.2rem;
     margin-top: 1rem;
 }
+
+.skills-name img {
+    height: 60px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 20px;
+}
+
+.skills-container h2:first-child {
+    color: var(--main-color);
+    padding-bottom: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.skills-container .skills-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--second-bg-color);
+    padding: 15px 20px;
+    border-radius: 2rem;
+    border: .2rem solid var(--bg-color);
+    min-width: 80vw;
+}
+
+.skills-name-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skills-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
