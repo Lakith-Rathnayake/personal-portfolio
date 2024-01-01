@@ -108,14 +108,15 @@ span {
 
 .btn {
     display: inline-block;
-    padding: 1rem 2rem;
+    padding: 1rem 1.8rem;
     background: var(--main-color);
     border-radius: 4rem;
-    box-shadow: 0 0 1rem var(--main-color);
+    box-shadow: 0 0 0.5rem var(--main-color);
     font-size: 1.2rem;
     color: var(--second-bg-color);
     letter-spacing: .1rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -319,4 +320,45 @@ span {
 
 .projects-box i:hover {
     color: var(--main-color);
+}
+
+.contact h2 {
+    padding-bottom: 20px;
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.3rem;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+    border: none;
+}
+
+.contact form .input-box input {
+    width: 49%;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form .btn {
+    margin-top: 30px;
 }
