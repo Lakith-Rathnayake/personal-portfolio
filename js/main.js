@@ -30,3 +30,42 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 }
 
+navLink.forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const targetId = event.target.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        if (targetSection) {
+            window.scrollTo({
+                top: targetSection.offsetTop, 
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+ScrollReveal({ 
+    reset: true,
+    distance: '80px',
+    duration: 1500,
+    delay: 100
+});
+
+ScrollReveal().reveal('.home-content, .heading ', { origin: 'top' });
+ScrollReveal().reveal('.home-img, .experience-box, .skills-box, .projects-box, .contact form ', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+
+const typed = new Typed('.multiple-text', {
+    strings: ['Fullstack Developer!', 'Engineering Graduate!'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+});
+
+document.querySelectorAll('section').forEach(section => {
+    if (section.offsetHeight > window.innerHeight) {
+        section.classList.add('taller-than-viewport');
+    }
+});
