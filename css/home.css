@@ -2,7 +2,7 @@
     --bg-color: #1f242d;
     --second-bg-color: #323946;
     --text-color: #fff;
-    --main-color: #66fcf1;
+    --main-color: #0F8;
 }
 
 body {
@@ -90,6 +90,8 @@ span {
 
 .home-content p {
     font-size: 1.4rem;
+    line-height: 1.5rem;
+    text-align: justify;
 }
 
 .home-img img{
@@ -149,6 +151,7 @@ span {
 .heading {
     text-align: center;
     font-size: 3rem;
+    font-weight: bold;
 }
 
 .about-content h2 {
@@ -162,7 +165,9 @@ span {
 }
 
 .about-content p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    text-align: justify;
     margin: 2rem 0 3rem;
 }
 
